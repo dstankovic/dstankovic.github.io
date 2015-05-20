@@ -1,38 +1,10 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dušan Stanković</title>
+---
+layout: default
+title: Blog
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Dušan Stanković</h1>
-        <p>Hacker, entrepreneur, motivator and crossfitter. Rather generalist than specialist. </p>
-        <p></p>
-
-        <p class="view">
-          <a href="http://rs.linkedin.com/in/dstankovic/">LinkedIn</a><br>
-          <a href="http://twitter.com/dulerock">Twitter</a><br>
-          <a href="https://github.com/dstankovic">GitHub</a><br>
-          <a href="http://www.facebook.com/dulemeisster">Facebook</a>
-
-        </p>
-
-        <p class="view"><a href="http://dulerock.com/public/dusan_cv_2015.pdf">My resume</a></p>
-  
-
-      </header>
-      <section>
-        <h3>
+<section>
+  <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Long story short</h3>
 
 <p>I'm young and enthusiastic software engeener. I live in Belgrade and currently I'm working at <a href="http://trucktrack.co">TruckTrack</a>. My hacker side is interested in algorithms, artificial intelligence and functional programming. On the other hand, my entreprenurial side is always watching for some kind of problems begging to be solved. </p>
@@ -47,11 +19,11 @@
 <h3>
 <a class="anchor"><span class="octicon octicon-link"></span></a>Projects</h3>
 
-       
-  <ul>
-     <li><a href="https://www.imaginecup.com/team/index/93990">Jethlete - Imagine Cup </a></li>
-    <li><a href="https://play.google.com/store/apps/details?id=com.veletudo.zeleniinspektor">Green Inspector</a></li>
-  </ul>
+
+<ul>
+<li><a href="https://www.imaginecup.com/team/index/93990">Jethlete - Imagine Cup </a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.veletudo.zeleniinspektor">Green Inspector</a></li>
+</ul>
 
 <h3>
 <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Let's work together</h3>
@@ -63,28 +35,11 @@
 
 <p>Bellow you can find my thoughts about life, hacking and startups.</p>
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-      </section>
-      <footer>
-        <p>Fell free to contact me at <a href="mailto:me@dulerock.com">me@dulerock.com</a></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-38470685-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
-  </body>
-</html>
+{% for post in site.posts %}
+<li>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</section>

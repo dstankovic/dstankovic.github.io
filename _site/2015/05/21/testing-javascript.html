@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dušan Stanković</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dušan Stanković</h1>
+        <p>Hacker, entrepreneur, motivator and crossfitter. Rather generalist than specialist. </p>
+        <p></p>
+
+        <p class="view">
+          <a href="http://rs.linkedin.com/in/dstankovic/">LinkedIn</a><br>
+          <a href="http://twitter.com/dulerock">Twitter</a><br>
+          <a href="https://github.com/dstankovic">GitHub</a><br>
+          <a href="http://www.facebook.com/dulemeisster">Facebook</a>
+
+        </p>
+
+        <p class="view"><a href="http://dulerock.com/public/dusan_cv_2015.pdf">My resume</a></p>
+
+
+      </header>
+      <section>
+        <a class="back-link" href="/">back</a>
+<h1 id="testing-javascript">Testing JavaScript</h1>
+
+<h2 id="protect-yourself-from-yourself-write-unit-tests">Protect yourself from yourself. Write unit tests.</h2>
+
+<ol>
+  <li>Why you should write tests?</li>
+  <li>TDD and BDD</li>
+  <li>Frameworks</li>
+  <li>Examples in Jasmine (plain JS)</li>
+  <li>How we use it  Jasmine/Karma/Grunt (AngularJS)</li>
+</ol>
+
+<h3 id="why-you-should-write-tests">Why you should write tests?</h3>
+
+<p>Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug fix it, patch it, etc… The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing. It’s not so rare to happen. Speaking of this we come to first reason why you should write unit tests, to prevent <strong>regressions</strong>. Second reason is that it may influence readability and organisation of your code. For example, you maybe wrote some code which is not so easy to test. Then you have to <strong>refactor</strong> it a bit, maybe divide it into <strong>smaller chunks</strong> and then test each of them.</p>
+
+<h3 id="tdd-and-bdd">TDD and BDD</h3>
+
+<p>The most common approach to testing is TDD. In TDD, you test “unit of implementation” in this specific order:  1. write falling test; 2. implement functionality and make the test pass; 3. refactor code; BDD is derived from TDD and process is the same, but instead of writing test for functionality, you write a test for specific behaviour.</p>
+
+<h3 id="frameworks">Frameworks</h3>
+
+<p>There is literally a bunch of <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript" title="Js Testing frameworks">JS testing frameworks</a> today, but I’ll go through most common one, QUnit, Mocha and Jasmine.</p>
+
+<p><img src="/images/jsframework.png" alt="JavaScript Frameworks" /></p>
+
+<h3 id="qunithttpsqunitjscom"><a href="https://qunitjs.com">QUnit</a></h3>
+
+<p>QUnit is the oldest of these three.You need just div in your html and you are ready to go. It has simple API.
+It has stop()/start() functions to handle asynchronous code testing.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//example</span>
+<span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple test increment&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">count</span><span class="o">:</span> <span class="mi">10</span><span class="p">};</span>
+
+    <span class="c1">//asume this function returns n+1 and we want to test it</span>
+    <span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s1">&#39;OK&#39;</span><span class="p">);</span>
+
+
+    <span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;OK&#39;</span><span class="p">);</span>
+
+<span class="p">});</span></code></pre></div>
+
+<h3 id="mochahttpmochajsorg"><a href="http://mochajs.org/">Mocha</a></h3>
+
+<p>Mocha is another popular testing framework. It doesn’t have assertion library but you can choose one of many.
+It has a bunch of features and its built on top of Node.js</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;assert&quot;</span><span class="p">);</span> <span class="c1">// node.js core module</span>
+
+  <span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;increment function&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should return +1 count when function is called&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">count</span><span class="o">:</span> <span class="mi">10</span><span class="p">};</span>
+
+      <span class="c1">//function takes whole object and change its count by 1</span>
+      <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">);</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span>
+    <span class="p">})</span>
+  <span class="p">});</span></code></pre></div>
+
+<h3 id="jasminehttpjasminegithubio"><a href="http://jasmine.github.io/">Jasmine</a></h3>
+
+<p>Jasmine is, according to <a href="http://github.com">GitHub</a> stars, most popular testing framework. It has great asertion library and also (as Mocha) great tools to test asynchronous code. Code style is same as above for Mocha (BDD), but it has it’s own assert library.
+From here on I’ll give a basic example how to start with Jasmine and how we use it with AngularJS/Grunt/Karma.</p>
+
+<a class="back-link" href="/">back</a>
+
+      </section>
+      <footer>
+        <p>Fell free to contact me at <a href="mailto:me@dulerock.com">me@dulerock.com</a></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-38470685-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
