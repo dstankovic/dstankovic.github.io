@@ -3,6 +3,11 @@ published: false
 ---
 
 
+---
+layout: post
+title: Testing JavaScript
+---
+
 # Testing JavaScript
 ## Protect yourself from yourself. Write unit tests.
 
