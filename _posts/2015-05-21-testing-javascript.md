@@ -10,13 +10,13 @@ title: Testing JavaScript
 1. Why you should write tests?
 2. TDD and BDD
 3. Frameworks
-4. Examples in Jasmine (plain JS)
+4. Getting started with Jasmine
 5. How we use it  Jasmine/Karma/Grunt (AngularJS)
 
 
 ### Why you should write tests?
 
-Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug fix it, patch it, etc... The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing. It’s not so rare to happen. Speaking of this we come to first reason why you should write unit tests, to prevent **regressions**. Second reason is that it may influence readability and organisation of your code. For example, you maybe wrote some code which is not so easy to test. Then you have to **refactor** it a bit, maybe divide it into **smaller chunks** and then test each of them.  
+Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug, fix it, patch it, etc... The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing. It’s not so rare to happen. Speaking of this we come to first reason why you should write unit tests, to prevent **regressions**. Second reason is that it may influence readability and organisation of your code. For example, you maybe wrote some code which is not so easy to test. Then you have to **refactor** it a bit, maybe divide it into **smaller chunks** and then test each of them.  
 
 ### TDD and BDD
 
@@ -54,7 +54,7 @@ QUnit.test('simple test increment',function(){
 ###[Mocha](http://mochajs.org/)
 
 Mocha is another popular testing framework. It doesn't have assertion library but you can choose one of many.
-It has a bunch of features and its built on top of Node.js
+It has a bunch of features and its built on top of [Node.js](https://nodejs.org).
 
 {% highlight javascript %}
 var assert = require("assert"); // node.js core module
@@ -75,3 +75,5 @@ var assert = require("assert"); // node.js core module
 
 Jasmine is, according to [GitHub](http://github.com) stars, most popular testing framework. It has great asertion library and also (as Mocha) great tools to test asynchronous code. Code style is same as above for Mocha (BDD), but it has it's own assert library.
 From here on I'll give a basic example how to start with Jasmine and how we use it with AngularJS/Grunt/Karma.
+
+### Getting started with Jasmine
