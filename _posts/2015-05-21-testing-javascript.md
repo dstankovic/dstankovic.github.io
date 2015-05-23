@@ -80,7 +80,7 @@ From here on I'll give a basic example how to start with Jasmine and how we use 
 
 First thing you'll need to do is to download latest Jasmine library from [here](https://github.com/jasmine/jasmine/releases).
 
-In this purposes I created simple 'program' which takes a string from an input and encrypt it with [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_cipher).
+In this purposes I created a simple 'program' which takes a string from an input and encrypt it with [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_cipher).
 
 So first, here is our index.html file:
 
@@ -110,7 +110,7 @@ var caesar = function(){
 }
 {% endhighlight %}
 
-What we need to understand is that our code is not always testable and you have to make an effort to make it to be. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
+We need to understand that our code is not always testable and you have to make an effort to make it that way. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
 Having these things in mind we can notice that all of our code is into one function and it's much harder to test it. What we're going to do is to move text manipulation part into another function so it looks like this:
 
 {% highlight javascript %}
@@ -189,5 +189,5 @@ Ok, so now that we wrote our two tests we need to somehow run it. Standalone lib
 </html>
 {% endhighlight %}
 
-We shound end up with this in our browser
+We should end up with this in our browser
 ![](/images/test-result.png)
