@@ -111,7 +111,7 @@ var caesar = function(){
 {% endhighlight %}
 
 We need to understand that our code is not always testable and you have to make an effort to make it that way. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
-Having these things in mind we can notice that all of our code is into one function and it's much harder to test it. What we're going to do is to move text manipulation part into another function so it looks like this:
+Having these things in mind we can notice that all of our code is within one function and it's much harder to test it. What we're going to do is to move text manipulation part into another function so it looks like this:
 
 {% highlight javascript %}
 var encrypt = function(normal){
@@ -165,7 +165,7 @@ it('shoud return ERROR if text is not string or is undefined',function(){
 {% endhighlight %}
 You can also add checks for null or object but I'll leave that to you.
 
-Ok, so now that we wrote our two tests we need to somehow run it. Standalone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.
+Ok, so now that we wrote our two tests we need to somehow run it. Stand-alone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.
 
 {% highlight html %}
 <html>
