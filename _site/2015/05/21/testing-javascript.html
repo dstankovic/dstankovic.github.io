@@ -37,12 +37,14 @@
 
 <h2 id="protect-yourself-from-yourself-write-unit-tests">Protect yourself from yourself. Write unit tests.</h2>
 
+<p>Topics covered:</p>
+
 <ol>
   <li>Why you should write tests?</li>
   <li>TDD and BDD</li>
   <li>Frameworks</li>
   <li>Getting started with Jasmine</li>
-  <li>How we use it  Jasmine/Karma/Grunt (AngularJS)</li>
+  <li>Testing AngularJS with Jasmine</li>
 </ol>
 
 <h3 id="why-you-should-write-tests">Why you should write tests?</h3>
@@ -104,7 +106,7 @@ From here on I’ll give a basic example how to start with Jasmine and how we us
 
 <p>First thing you’ll need to do is to download latest Jasmine library from <a href="https://github.com/jasmine/jasmine/releases">here</a>.</p>
 
-<p>In this purposes I created simple ‘program’ which takes a string from an input and encrypt it with <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a>.</p>
+<p>In this purposes I created a simple ‘program’ which takes a string from an input and encrypt it with <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a>.</p>
 
 <p>So first, here is our index.html file:</p>
 
@@ -129,8 +131,8 @@ From here on I’ll give a basic example how to start with Jasmine and how we us
   <span class="nx">alert</span><span class="p">(</span><span class="nx">encryptedText</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 
-<p>What we need to understand is that our code is not always testable and you have to make an effort to make it to be. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
-Having these things in mind we can notice that all of our code is into one function and it’s much harder to test it. What we’re going to do is to move text manipulation part into another function so it looks like this:</p>
+<p>We need to understand that our code is not always testable and you have to make an effort to make it that way. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
+Having these things in mind we can notice that all of our code is within one function and it’s much harder to test it. What we’re going to do is to move text manipulation part into another function so it looks like this:</p>
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">encrypt</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">normal</span><span class="p">){</span>
   <span class="kd">var</span> <span class="nx">encryptedText</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
@@ -177,7 +179,7 @@ Having these things in mind we can notice that all of our code is into one funct
 
 <p>You can also add checks for null or object but I’ll leave that to you.</p>
 
-<p>Ok, so now that we wrote our two tests we need to somehow run it. Standalone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.</p>
+<p>Ok, so now that we wrote our two tests we need to somehow run it. Stand-alone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
@@ -199,8 +201,12 @@ Having these things in mind we can notice that all of our code is into one funct
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span></code></pre></div>
 
-<p>We shound end up with this in our browser
+<p>We should end up with this in our browser
 <img src="/images/test-result.png" alt="" /></p>
+
+<p>I guess that this is enough for you to understand how to write proper unit tests, so I’ll now show you how we use Jasmine for testing AngularJS.</p>
+
+<h3 id="testing-angularjs-with-jasmine">Testing AngularJS with Jasmine</h3>
 
 <a class="back-link" href="/">back</a>
 

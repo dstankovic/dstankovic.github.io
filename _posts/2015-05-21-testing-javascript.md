@@ -7,11 +7,13 @@ title: Testing JavaScript
 
 ## Protect yourself from yourself. Write unit tests.
 
+Topics covered:
+
 1. Why you should write tests?
 2. TDD and BDD
 3. Frameworks
 4. Getting started with Jasmine
-5. How we use it  Jasmine/Karma/Grunt (AngularJS)
+5. Testing AngularJS with Jasmine
 
 
 ### Why you should write tests?
@@ -191,3 +193,8 @@ Ok, so now that we wrote our two tests we need to somehow run it. Stand-alone li
 
 We should end up with this in our browser
 ![](/images/test-result.png)
+
+I guess that this is enough for you to understand how to write proper unit tests, so I'll now show you how we use Jasmine for testing AngularJS.
+
+
+### Testing AngularJS with Jasmine
