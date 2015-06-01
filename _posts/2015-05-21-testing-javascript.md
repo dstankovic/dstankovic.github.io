@@ -13,7 +13,6 @@ Topics covered:
 2. TDD and BDD
 3. Frameworks
 4. Getting started with Jasmine
-5. Testing AngularJS with Jasmine
 
 
 ### Why you should write tests?
@@ -197,4 +196,6 @@ We should end up with this in our browser
 I guess that this is enough for you to understand how to write proper unit tests, so I'll now show you how we use Jasmine for testing AngularJS.
 
 
-### Testing AngularJS with Jasmine
+In next post I'll try to put closer to you how to test your AngularJS code with Jasmine.
+
+Cheerio. 
