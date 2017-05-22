@@ -16,18 +16,19 @@
     <div class="wrapper">
       <header>
         <h1>Dušan Stanković</h1>
-        <p>Hacker, entrepreneur, motivator and crossfitter. Rather generalist than specialist. </p>
+        <p>Hacker, entrepreneur, activist. Rather generalist than specialist. </p>
         <p></p>
 
         <p class="view">
+          <a href="/">Home</a><br>
+          <a href="/slides">Talks/Workshops</a><br>
+          <a href="/blog">Blog</a><br>
+          <a href="http://dulerock.com/public/dusan_cv_2015.pdf">My resume</a><br><br><br><br><br>
           <a href="http://rs.linkedin.com/in/dstankovic/">LinkedIn</a><br>
           <a href="http://twitter.com/dulerock">Twitter</a><br>
           <a href="https://github.com/dstankovic">GitHub</a><br>
           <a href="http://www.facebook.com/dulemeisster">Facebook</a>
-
         </p>
-
-        <p class="view"><a href="http://dulerock.com/public/dusan_cv_2015.pdf">My resume</a></p>
 
 
       </header>
@@ -60,43 +61,43 @@
 
 <p><img src="/images/jsframework.png" alt="JavaScript Frameworks" /></p>
 
-<h3 id="qunithttpsqunitjscom"><a href="https://qunitjs.com">QUnit</a></h3>
+<p>###<a href="https://qunitjs.com">QUnit</a></p>
 
 <p>QUnit is the oldest of these three.You need just div in your html and you are ready to go. It has simple API.
 It has stop()/start() functions to handle asynchronous code testing.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//example</span>
-<span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple test increment&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">count</span><span class="o">:</span> <span class="mi">10</span><span class="p">};</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//example</span>
+<span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">'simple test increment'</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="na">count</span><span class="p">:</span> <span class="mi">10</span><span class="p">};</span>
 
     <span class="c1">//asume this function returns n+1 and we want to test it</span>
     <span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s1">&#39;OK&#39;</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s1">'OK'</span><span class="p">);</span>
 
 
     <span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;OK&#39;</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">'OK'</span><span class="p">);</span>
 
-<span class="p">});</span></code></pre></div>
+<span class="p">});</span></code></pre></figure>
 
-<h3 id="mochahttpmochajsorg"><a href="http://mochajs.org/">Mocha</a></h3>
+<p>###<a href="http://mochajs.org/">Mocha</a></p>
 
 <p>Mocha is another popular testing framework. It doesn’t have assertion library but you can choose one of many.
 It has a bunch of features and its built on top of <a href="https://nodejs.org">Node.js</a>.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;assert&quot;</span><span class="p">);</span> <span class="c1">// node.js core module</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"assert"</span><span class="p">);</span> <span class="c1">// node.js core module</span>
 
-  <span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;increment function&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-    <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should return +1 count when function is called&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-      <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">count</span><span class="o">:</span> <span class="mi">10</span><span class="p">};</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="s1">'increment function'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'should return +1 count when function is called'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">testingObject</span> <span class="o">=</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="na">count</span><span class="p">:</span> <span class="mi">10</span><span class="p">};</span>
 
       <span class="c1">//function takes whole object and change its count by 1</span>
       <span class="nx">count</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">);</span>
       <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">testingObject</span><span class="p">.</span><span class="nx">count</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span>
     <span class="p">})</span>
-  <span class="p">});</span></code></pre></div>
+  <span class="p">});</span></code></pre></figure>
 
-<h3 id="jasminehttpjasminegithubio"><a href="http://jasmine.github.io/">Jasmine</a></h3>
+<p>###<a href="http://jasmine.github.io/">Jasmine</a></p>
 
 <p>Jasmine is, according to <a href="http://github.com">GitHub</a> stars, most popular testing framework. It has great asertion library and also (as Mocha) great tools to test asynchronous code. Code style is same as above for Mocha (BDD), but it has it’s own assert library.
 From here on I’ll give a basic example how to start with Jasmine and how we use it with AngularJS/Grunt/Karma.</p>
@@ -109,32 +110,32 @@ From here on I’ll give a basic example how to start with Jasmine and how we us
 
 <p>So first, here is our index.html file:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;normalText&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;caesar()&quot;</span><span class="nt">&gt;</span>Caesar cipher<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"normalText"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"caesar()"</span><span class="nt">&gt;</span>Caesar cipher<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;br&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;Caesar.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"Caesar.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></div>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
 <p>And here is our Caesar.js file:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">caesar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">caesar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="c1">//get value from input</span>
-  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s1">&#39;normalText&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
-  <span class="kd">var</span> <span class="nx">encryptedText</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s1">'normalText'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">encryptedText</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">normal</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
     <span class="nx">encryptedText</span> <span class="o">+=</span> <span class="nb">String</span><span class="p">.</span><span class="nx">fromCharCode</span><span class="p">(</span><span class="nx">normal</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="nx">alert</span><span class="p">(</span><span class="nx">encryptedText</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <p>We need to understand that our code is not always testable and you have to make an effort to make it that way. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
 Having these things in mind we can notice that all of our code is within one function and it’s much harder to test it. What we’re going to do is to move text manipulation part into another function so it looks like this:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">encrypt</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">normal</span><span class="p">){</span>
-  <span class="kd">var</span> <span class="nx">encryptedText</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">encrypt</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">normal</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">encryptedText</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">normal</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
     <span class="nx">encryptedText</span> <span class="o">+=</span> <span class="nb">String</span><span class="p">.</span><span class="nx">fromCharCode</span><span class="p">(</span><span class="nx">normal</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
   <span class="p">}</span>
@@ -143,62 +144,62 @@ Having these things in mind we can notice that all of our code is within one fun
 
 <span class="kd">var</span> <span class="nx">caesar</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="c1">//get value from input</span>
-  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s1">&#39;normalText&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s1">'normalText'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">encrypted</span> <span class="o">=</span> <span class="nx">encrypt</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
   <span class="nx">alert</span><span class="p">(</span><span class="nx">encrypted</span><span class="p">);</span>
 
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <p>So after we separated out ‘business’ logic into encrypt function we made it easier for testing. Now we are going to crate another file called CaesarTest.js and put it into test folder.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;CaesarTest&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">describe</span><span class="p">(</span><span class="s1">'CaesarTest'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
 
-  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should transform all letters in given number of times to be three positions above in ascii order&#39;</span><span class="p">,</span>
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should transform all letters in given number of times to be three positions above in ascii order'</span><span class="p">,</span>
     <span class="kd">function</span><span class="p">(){</span>
-      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;456&#39;</span><span class="p">);</span> <span class="c1">//matcher</span>
-      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;def&#39;</span><span class="p">);</span>
-      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">&#39;333&#39;</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;666&#39;</span><span class="p">);</span>
+      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">'123'</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'456'</span><span class="p">);</span> <span class="c1">//matcher</span>
+      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">'abc'</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'def'</span><span class="p">);</span>
+      <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="s1">'333'</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'666'</span><span class="p">);</span>
   <span class="p">});</span>
-<span class="p">});</span></code></pre></div>
+<span class="p">});</span></code></pre></figure>
 
 <p>Now, lets add a check in encrypt function. If value entered is not a string or is undefined return string ‘ERROR’. Add the following code at the beginning of encrypt function</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">...</span>
-<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">normal</span> <span class="o">||</span> <span class="k">typeof</span> <span class="nx">normal</span> <span class="o">!=</span> <span class="s1">&#39;string&#39;</span><span class="p">){</span>
-  <span class="k">return</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">...</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">normal</span> <span class="o">||</span> <span class="k">typeof</span> <span class="nx">normal</span> <span class="o">!=</span> <span class="s1">'string'</span><span class="p">){</span>
+  <span class="k">return</span> <span class="s2">"ERROR"</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="p">...</span></code></pre></div>
+<span class="p">...</span></code></pre></figure>
 
 <p>We don’t want to leave this code untested, so lets add another test. We just need to add new it function, describe it and provide test function.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;shoud return ERROR if text is not string or is undefined&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
-  <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="kc">undefined</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
-  <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="mi">4</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
-<span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">it</span><span class="p">(</span><span class="s1">'shoud return ERROR if text is not string or is undefined'</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="kc">undefined</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'ERROR'</span><span class="p">);</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">encrypt</span><span class="p">(</span><span class="mi">4</span><span class="p">)).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'ERROR'</span><span class="p">);</span>
+<span class="p">});</span></code></pre></figure>
 
 <p>You can also add checks for null or object but I’ll leave that to you.</p>
 
 <p>Ok, so now that we wrote our two tests we need to somehow run it. Stand-alone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">type=</span><span class="s">&quot;image/png&quot;</span> <span class="na">href=</span><span class="s">&quot;lib/jasmine-2.3.4/jasmine_favicon.png&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;lib/jasmine-2.3.4/jasmine.css&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"lib/jasmine-2.3.4/jasmine_favicon.png"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"lib/jasmine-2.3.4/jasmine.css"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;lib/jasmine-2.3.4/jasmine.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;lib/jasmine-2.3.4/jasmine-html.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;lib/jasmine-2.3.4/boot.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/jasmine-2.3.4/jasmine.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/jasmine-2.3.4/jasmine-html.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/jasmine-2.3.4/boot.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
   <span class="c">&lt;!-- include source files here... --&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;Caesar.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"Caesar.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
   <span class="c">&lt;!-- include test files here... --&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;tests/CaesarTest.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"tests/CaesarTest.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 
 <span class="nt">&lt;body&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></div>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
 <p>We should end up with this in our browser
 <img src="/images/test-result.png" alt="" /></p>
@@ -226,7 +227,7 @@ Having these things in mind we can notice that all of our code is within one fun
 
       </section>
       <footer>
-        <p>Fell free to contact me at <a href="mailto:me@dulerock.com">me@dulerock.com</a></p>
+        <div>Fell free to contact me at <a href="mailto:me@dulerock.com">me@dulerock.com</a></div>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
