@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Dušan Stanković</title>
+    <link>https://dulerock.com/blog/</link>
+    <description>Recent content in Blogs on Dušan Stanković</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dulerock.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Testing Javascript</title>
+      <link>https://dulerock.com/blog/testing-javascript/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/blog/testing-javascript/</guid>
+      <description>Protect yourself from yourself. Write unit tests. Topics covered:
+ Why you should write tests? TDD and BDD Frameworks Getting started with Jasmine  Why you should write tests? Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug, fix it, patch it, etc&amp;hellip; The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing.</description>
+    </item>
+    
+  </channel>
+</rss>

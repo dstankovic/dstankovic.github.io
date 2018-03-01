@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testing Javascript</title>
+        <style>
+
+    html body {
+        font-family: 'Lato', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #303F9F;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://dulerock.com/css/main.css">
+
+
+ <link rel="stylesheet" href="https://dulerock.com/css/styles.css"> 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37" />
+        
+        
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Testing Javascript</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/blog/">Blog</a></li>
+                            
+                                <li><a href="/talks/">Talks/Workshops</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:me@dulerock.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/dulerock/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://facebook.com/stankovicdushan/"><i class="fa fa-facebook"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/dulerock/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/dstankovic/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="/public/dusan_stankovic_2018.pdf"><i class="fa fa-file"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+    <h2>Testing Javascript</h2>
+    <h5>May 21, 2015</h5>
+    <br> <div class="text-justify">
+
+<h2 id="protect-yourself-from-yourself-write-unit-tests">Protect yourself from yourself. Write unit tests.</h2>
+
+<p>Topics covered:</p>
+
+<ol>
+<li>Why you should write tests?</li>
+<li>TDD and BDD</li>
+<li>Frameworks</li>
+<li>Getting started with Jasmine</li>
+</ol>
+
+<h3 id="why-you-should-write-tests">Why you should write tests?</h3>
+
+<p>Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug, fix it, patch it, etc&hellip; The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing. It’s not so rare to happen. Speaking of this we come to first reason why you should write unit tests, to prevent <strong>regressions</strong>. Second reason is that it may influence readability and organisation of your code. For example, you maybe wrote some code which is not so easy to test. Then you have to <strong>refactor</strong> it a bit, maybe divide it into <strong>smaller chunks</strong> and then test each of them.</p>
+
+<h3 id="tdd-and-bdd">TDD and BDD</h3>
+
+<p>The most common approach to testing is TDD. In TDD, you test “unit of implementation” in this specific order:  1. write falling test; 2. implement functionality and make the test pass; 3. refactor code; BDD is derived from TDD and process is the same, but instead of writing test for functionality, you write a test for specific behaviour.</p>
+
+<h3 id="frameworks">Frameworks</h3>
+
+<p>There is literally a bunch of <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript" title="Js Testing frameworks">JS testing frameworks</a> today, but I’ll go through most common one, QUnit, Mocha and Jasmine.</p>
+
+<p><img src="/images/jsframework.png" alt="JavaScript Frameworks" /></p>
+
+<h3 id="qunit-https-qunitjs-com"><a href="https://qunitjs.com">QUnit</a></h3>
+
+<p>QUnit is the oldest of these three.You need just div in your html and you are ready to go. It has simple API.
+It has stop()/start() functions to handle asynchronous code testing.</p>
+
+<pre><code class="language-javascript">//example
+QUnit.test('simple test increment',function(){
+    var testingObject = {id: 5, count: 10};
+
+    //asume this function returns n+1 and we want to test it
+    testingObject.count = count(testingObject.count);
+    assert.equal(testingObject.count, 11, 'OK');
+
+
+    testingObject.count = count(testingObject.count);
+    assert.equal(testingObject.count, 12, 'OK');
+
+});
+</code></pre>
+
+<h3 id="mocha-http-mochajs-org"><a href="http://mochajs.org/">Mocha</a></h3>
+
+<p>Mocha is another popular testing framework. It doesn&rsquo;t have assertion library but you can choose one of many.
+It has a bunch of features and its built on top of <a href="https://nodejs.org">Node.js</a>.</p>
+
+<pre><code class="language-javascript">var assert = require(&quot;assert&quot;); // node.js core module
+
+  describe('increment function', function(){
+    it('should return +1 count when function is called', function(){
+      var testingObject = {id: 5, count: 10};
+
+      //function takes whole object and change its count by 1
+      count(testingObject);
+      assert.equal(testingObject.count, 11);
+    })
+  });
+
+</code></pre>
+
+<h3 id="jasmine-http-jasmine-github-io"><a href="http://jasmine.github.io/">Jasmine</a></h3>
+
+<p>Jasmine is, according to <a href="http://github.com">GitHub</a> stars, most popular testing framework. It has great asertion library and also (as Mocha) great tools to test asynchronous code. Code style is same as above for Mocha (BDD), but it has it&rsquo;s own assert library.
+From here on I&rsquo;ll give a basic example how to start with Jasmine and how we use it with AngularJS/Grunt/Karma.</p>
+
+<h3 id="getting-started-with-jasmine">Getting started with Jasmine</h3>
+
+<p>First thing you&rsquo;ll need to do is to download latest Jasmine library from <a href="https://github.com/jasmine/jasmine/releases">here</a>.</p>
+
+<p>In this purposes I created a simple &lsquo;program&rsquo; which takes a string from an input and encrypt it with <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a>.</p>
+
+<p>So first, here is our index.html file:</p>
+
+<pre><code class="language-html">&lt;html&gt;
+  &lt;body&gt;
+    &lt;input type=&quot;text&quot; name=&quot;normalText&quot;&gt;
+    &lt;button onclick=&quot;caesar()&quot;&gt;Caesar cipher&lt;/button&gt;
+    &lt;br&gt;
+    &lt;script src=&quot;Caesar.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>And here is our Caesar.js file:</p>
+
+<pre><code class="language-javascript">
+var caesar = function(){
+  //get value from input
+  var value = document.getElementsByName('normalText')[0].value;
+  var encryptedText = &quot;&quot;;
+  for(var i=0;i&lt;normal.length;i++){
+    encryptedText += String.fromCharCode(normal.charCodeAt(i)+3);
+  }
+  alert(encryptedText);
+}
+</code></pre>
+
+<p>We need to understand that our code is not always testable and you have to make an effort to make it that way. Another important thing is that we need to put a focus on testing our business logic. So if you want to test DOM manipulation you better take a look at end-to-end testing.
+Having these things in mind we can notice that all of our code is within one function and it&rsquo;s much harder to test it. What we&rsquo;re going to do is to move text manipulation part into another function so it looks like this:</p>
+
+<pre><code class="language-javascript">var encrypt = function(normal){
+  var encryptedText = &quot;&quot;;
+  for(var i=0;i&lt;normal.length;i++){
+    encryptedText += String.fromCharCode(normal.charCodeAt(i)+3);
+  }
+  return encryptedText;
+}
+
+var caesar = function(){
+  //get value from input
+  var value = document.getElementsByName('normalText')[0].value;
+  var encrypted = encrypt(value);
+  alert(encrypted);
+
+}
+</code></pre>
+
+<p>So after we separated out &lsquo;business&rsquo; logic into encrypt function we made it easier for testing. Now we are going to crate another file called CaesarTest.js and put it into test folder.</p>
+
+<pre><code class="language-javascript">describe('CaesarTest', function(){
+
+  it('should transform all letters in given number of times to be three positions above in ascii order',
+    function(){
+      expect(encrypt('123')).toEqual('456'); //matcher
+      expect(encrypt('abc')).toEqual('def');
+      expect(encrypt('333')).toEqual('666');
+  });
+});
+</code></pre>
+
+<p>Now, lets add a check in encrypt function. If value entered is not a string or is undefined return string &lsquo;ERROR&rsquo;. Add the following code at the beginning of encrypt function</p>
+
+<pre><code class="language-javascript">...
+if(!normal || typeof normal != 'string'){
+  return &quot;ERROR&quot;;
+}
+...
+</code></pre>
+
+<p>We don&rsquo;t want to leave this code untested, so lets add another test. We just need to add new it function, describe it and provide test function.</p>
+
+<pre><code class="language-javascript">it('shoud return ERROR if text is not string or is undefined',function(){
+  expect(encrypt(undefined)).toEqual('ERROR');
+  expect(encrypt(4)).toEqual('ERROR');
+});
+</code></pre>
+
+<p>You can also add checks for null or object but I&rsquo;ll leave that to you.</p>
+
+<p>Ok, so now that we wrote our two tests we need to somehow run it. Stand-alone library comes with SpecRunner.html file and an example how to run tests. So we will just modify file and run it in browser to check the test results.</p>
+
+<pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;lib/jasmine-2.3.4/jasmine_favicon.png&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;lib/jasmine-2.3.4/jasmine.css&quot;&gt;
+
+  &lt;script src=&quot;lib/jasmine-2.3.4/jasmine.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;lib/jasmine-2.3.4/jasmine-html.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;lib/jasmine-2.3.4/boot.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- include source files here... --&gt;
+  &lt;script src=&quot;Caesar.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- include test files here... --&gt;
+  &lt;script src=&quot;tests/CaesarTest.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>We should end up with this in our browser
+<img src="/images/test-result.png" alt="" /></p>
+
+<p>I guess that this is enough for you to understand how to write proper unit tests, so I&rsquo;ll now show you how we use Jasmine for testing AngularJS.</p>
+
+<p>In next post I&rsquo;ll try to put closer to you how to test your AngularJS code with Jasmine.</p>
+
+<p>Cheerio.</p>
+</div>
+
+    
+</main>

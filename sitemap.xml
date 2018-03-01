@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dulerock.com/talks/webcamp/</loc>
+    <lastmod>2017-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/talks/golang-brlo/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/talks/angular-dafed/</loc>
+    <lastmod>2015-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/blog/testing-javascript/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/blog/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/</loc>
+    <lastmod>2017-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/tags/javascript/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/tags/programming/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/tags/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/talks/</loc>
+    <lastmod>2017-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dulerock.com/tags/web/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

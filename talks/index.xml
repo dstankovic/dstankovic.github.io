@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Dušan Stanković</title>
+    <link>https://dulerock.com/talks/</link>
+    <description>Recent content in Talks on Dušan Stanković</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dulerock.com/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fight for digital privacy</title>
+      <link>https://dulerock.com/talks/webcamp/</link>
+      <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/talks/webcamp/</guid>
+      <description>20 minute talk, part of a WebCamp Ljubljana 2017.</description>
+    </item>
+    
+    <item>
+      <title>Go(lang) for web</title>
+      <link>https://dulerock.com/talks/golang-brlo/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/talks/golang-brlo/</guid>
+      <description>Golang workshop in Brno organized by kiwi.com.</description>
+    </item>
+    
+    <item>
+      <title>Angular 2.0 - Core concepts</title>
+      <link>https://dulerock.com/talks/angular-dafed/</link>
+      <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/talks/angular-dafed/</guid>
+      <description>Speaking at DaFED meetup in Novi Sad about Angular 2.0 core concepts.</description>
+    </item>
+    
+  </channel>
+</rss>

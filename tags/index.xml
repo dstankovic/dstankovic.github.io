@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dušan Stanković</title>
+    <link>https://dulerock.com/tags/</link>
+    <description>Recent content in Tags on Dušan Stanković</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dulerock.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://dulerock.com/tags/javascript/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://dulerock.com/tags/programming/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://dulerock.com/tags/web/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dulerock.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
