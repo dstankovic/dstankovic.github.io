@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dušan Stanković</title>
-    <link>https://dulerock.com/</link>
+    <link>/</link>
     <description>Recent content on Dušan Stanković</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dulerock.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fight for digital privacy</title>
-      <link>https://dulerock.com/talks/webcamp/</link>
+      <link>/talks/webcamp/</link>
       <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dulerock.com/talks/webcamp/</guid>
+      <guid>/talks/webcamp/</guid>
       <description>20 minute talk, part of a WebCamp Ljubljana 2017.</description>
     </item>
     
     <item>
       <title>Go(lang) for web</title>
-      <link>https://dulerock.com/talks/golang-brlo/</link>
+      <link>/talks/golang-brlo/</link>
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://dulerock.com/talks/golang-brlo/</guid>
+      <guid>/talks/golang-brlo/</guid>
       <description>Golang workshop in Brno organized by kiwi.com.</description>
     </item>
     
     <item>
       <title>Angular 2.0 - Core concepts</title>
-      <link>https://dulerock.com/talks/angular-dafed/</link>
+      <link>/talks/angular-dafed/</link>
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://dulerock.com/talks/angular-dafed/</guid>
+      <guid>/talks/angular-dafed/</guid>
       <description>Speaking at DaFED meetup in Novi Sad about Angular 2.0 core concepts.</description>
     </item>
     
     <item>
       <title>Testing Javascript</title>
-      <link>https://dulerock.com/blog/testing-javascript/</link>
+      <link>/blog/testing-javascript/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://dulerock.com/blog/testing-javascript/</guid>
+      <guid>/blog/testing-javascript/</guid>
       <description>Protect yourself from yourself. Write unit tests. Topics covered:
  Why you should write tests? TDD and BDD Frameworks Getting started with Jasmine  Why you should write tests? Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug, fix it, patch it, etc&amp;hellip; The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing.</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>https://dulerock.com/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dulerock.com/about/</guid>
+      <guid>/about/</guid>
       <description>Tagline I&amp;rsquo;m software engineer currently based in Berlin, Germany. I work for ESCRIBA where I rewrite their old Struts applications into new frameworks like Angular/React.
 Experience After working in Gtech for 2 years on various projects, I decided to change my path and swtich from corporate to startup company. I&amp;rsquo;ve joined TruckTrack and help them build a modern SaaS solution for managing trucking companies. With my mission done there, I joined San Francisco based company Embroker as #4 engineer and seen company grow from barely 10 to 100 people.</description>
     </item>

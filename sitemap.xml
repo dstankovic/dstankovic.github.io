@@ -3,72 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dulerock.com/talks/webcamp/</loc>
+    <loc>/talks/webcamp/</loc>
     <lastmod>2017-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dulerock.com/talks/golang-brlo/</loc>
+    <loc>/talks/golang-brlo/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dulerock.com/talks/angular-dafed/</loc>
+    <loc>/talks/angular-dafed/</loc>
     <lastmod>2015-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dulerock.com/blog/testing-javascript/</loc>
+    <loc>/blog/testing-javascript/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dulerock.com/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>https://dulerock.com/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/</loc>
+    <loc>/</loc>
     <lastmod>2017-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/tags/javascript/</loc>
+    <loc>/tags/javascript/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/tags/programming/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/talks/</loc>
+    <loc>/talks/</loc>
     <lastmod>2017-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dulerock.com/tags/web/</loc>
+    <loc>/tags/web/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
