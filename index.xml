@@ -6,10 +6,19 @@
     <description>Recent content on Dušan Stanković</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Free chatbots in 20ish minutes</title>
+      <link>/talks/hacker-news-berlin/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/hacker-news-berlin/</guid>
+      <description>How to create a chatbot using AWS Lambda and NodeJS with a little help from ClaudiaJS</description>
+    </item>
     
     <item>
       <title>Fight for digital privacy</title>
