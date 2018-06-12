@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Dušan Stanković</title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on Dušan Stanković</description>
+    <title>Travel on Dušan Stanković</title>
+    <link>/tags/travel/</link>
+    <description>Recent content in Travel on Dušan Stanković</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>/blog/phisically-active-youth/</guid>
       <description>In June 2017, during a team building event, I spoke with a colleague about traveling to Africa. We shared our ideas why we would love to travel there and what should we do and see. Since I held a few programming courses back in Serbia one of my wishes was to do the same thing somewhere in Africa. My colleague said he would like to visit Ethiopia, see how they live and get a taste of their culture, but didn’t have anything against visiting some other country.</description>
-    </item>
-    
-    <item>
-      <title>Testing Javascript</title>
-      <link>/blog/testing-javascript/</link>
-      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/testing-javascript/</guid>
-      <description>Protect yourself from yourself. Write unit tests. Topics covered:
- Why you should write tests? TDD and BDD Frameworks Getting started with Jasmine  Why you should write tests? Every programer had that awkward moment when something went terribly wrong after a new release. Then you have to run through code, find a bug, fix it, patch it, etc&amp;hellip; The worst part is that thing previously was working nice. So what probably happened is that when someone changed a thing, it messed up another thing.</description>
     </item>
     
   </channel>

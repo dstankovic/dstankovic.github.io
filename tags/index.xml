@@ -21,11 +21,29 @@
     </item>
     
     <item>
+      <title>Life</title>
+      <link>/tags/life/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Programming</title>
       <link>/tags/programming/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
       
       <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>/tags/travel/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/travel/</guid>
       <description></description>
     </item>
     
